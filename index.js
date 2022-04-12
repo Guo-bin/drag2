@@ -27,7 +27,14 @@
 // slider2.onpointerover = beingOver;
 // slider.onpointerdown = beginSliding;
 // slider.onpointerup = stopSliding;
-
+const html = document.querySelector("html");
+const body = document.querySelector("body");
+html.addEventListener("pointerdown", () => {
+    e.preventDefault();
+});
+body.addEventListener("pointerdown", () => {
+    e.preventDefault();
+});
 const boxs = document.querySelectorAll(".box");
 const box = document.querySelector(".box2");
 const container = document.querySelector(".container");
