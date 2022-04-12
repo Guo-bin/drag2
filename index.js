@@ -100,6 +100,9 @@ function addPointerEvt(element, index) {
 
         // this.style.top = `${e.clientY - this.offsetHeight / 2}px`;
     }
+    element.addEventListener("touchstart", (e) => {
+        e.preventDefault();
+    });
     element.addEventListener("pointerdown", (e) => {
         e.preventDefault();
         itemIndex = Number(element.dataset.index);
